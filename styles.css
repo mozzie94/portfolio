@@ -25,7 +25,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    flex: 1 1 auto;
     width: 90vw;
     max-width: 1344px;
     margin: 50px 48px 34px;
@@ -55,8 +54,9 @@ a{
 .tabs{
     display: flex;
     justify-content: space-between;
-    gap: 56px;
+    gap: 10px 56px;
     text-wrap-mode: nowrap;
+    flex-wrap: wrap;
 }
 
 .about{
@@ -82,13 +82,18 @@ a{
 }
 
 .about .content img{
-    max-width: 400px;
+    width: 400px;
+    max-width: 90vw;
 }
 
 .about .content .text{
     margin:0;
     font-size: 24px;
     max-width: 914px;
+}
+
+.about .content .text p{
+    margin-top :0;
 }
 
 .claw-star .media img, .media iframe{
