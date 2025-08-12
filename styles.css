@@ -21,19 +21,24 @@ a{
     justify-content: space-between;
     align-items: end;
     flex: 1 1 auto;
-    max-width: 1000px;
+    width: 90vw;
+    max-width: 1344px;
     margin: 50px 48px 34px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 .spacer h1{
     margin:0;
     font-size: 60px;
+    text-wrap-mode: nowrap;
 }
 
 .spacer p{
@@ -44,14 +49,16 @@ a{
 
 .tabs{
     display: flex;
+    justify-content: space-between;
     gap: 56px;
+    text-wrap-mode: nowrap;
 }
 
 .about{
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-    max-width: 1000px;
+    width: 90vw;
+    max-width: 1344px;
     margin: 0px 24px;
 }
 
@@ -74,17 +81,35 @@ a{
 
 .about .content .text{
     margin:0;
-    max-width: 600px;
+    font-size: 24px;
+    max-width: 780px;
 }
 
-.media img{
-    max-width: 400px;
+.media img, .media iframe{
+    width: 400px;
+    max-width: 90vw;
 }
 
 .works{
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    width: 90vw;
     max-width: 1000px;
     margin: 0px 48px;
+}
+
+.works .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.claw-star{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.claw-star .text{
+    font-size: 20px;
 }
