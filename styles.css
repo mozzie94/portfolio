@@ -13,7 +13,14 @@ html {
 a{
     text-decoration: none;
     color: white;
+    transition: color 150ms ease-in;
 }
+
+a:hover{
+    color: rgb(200, 200, 200);
+    transition: color 150ms ease-in;
+}
+
 
 .header{
     background-color: #113D4D;
@@ -48,7 +55,7 @@ a{
 .spacer p{
     margin:0;
     font-size: 32px;;
-    font-weight: 500; /*medium*/
+    font-weight: 200; /*light*/
 }
 
 .tabs{
@@ -94,6 +101,7 @@ a{
 
 .about .content .text p{
     margin-top :0;
+    font-weight: 300; /*slightly light*/
 }
 
 .claw-star .media img, .media iframe{
@@ -153,4 +161,5 @@ a{
 
 .claw-star .text p, .claw-star .text ul{
     margin:0;
+    font-weight: 300; /*slightly light*/
 }
