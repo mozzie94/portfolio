@@ -76,7 +76,7 @@ a:hover{
     margin:0;
     font-size: 45px;
     text-wrap-mode: nowrap;
-}
+    }
 }
 
 .about{
@@ -96,7 +96,7 @@ a:hover{
 }
 
 .title h2{
-    font-size: 60px;
+    font-size: 48px;
     margin:0;
 }
 
@@ -144,7 +144,7 @@ a:hover{
         font-size: 16px;
     }
     .title h2{
-    font-size: 45px;
+    font-size: 38px;
     margin:0;  
     }
 }
@@ -154,12 +154,7 @@ a:hover{
     font-weight: 300; /*slightly light*/
 }
 
-.claw-star .media img, .media iframe{
-    width: 600px;
-    max-height: 337px;
-    max-width: 90vw;
-    aspect-ratio: 16/9;
-}
+
 
 .works{
     display: flex;
@@ -179,22 +174,52 @@ a:hover{
 
 .claw-star{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 10px 20px;
 }
 
-.claw-star .media{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+@media screen and (min-width: 786px){
+    .claw-star .media{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        max-width: calc(inherit/2);
+    }
+
+    .claw-star .media img, .claw-star .media iframe{
+        width: 44vw;
+        max-width: 667px;
+    }
+}
+
+@media screen and (max-width: 785px){
+    .claw-star .media{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        max-width: 90vw;
+        flex: 1 1 auto;
+    }
+
+    .claw-star .media img, .claw-star .media iframe{
+        max-width: inherit;
+        aspect-ratio: 16/9;
+    }
 }
 
 .claw-star .text{
     font-size: 20px;
-    max-width: 724px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex: 1 1 277px;
+}
+
+@media screen and (max-width: 600px) /*mobile*/{
+    .claw-star .text{
+        font-size: 16px;
+    }
 }
 
 .claw-star .text .summary,
@@ -204,9 +229,15 @@ a:hover{
 }
 
 .claw-star .text .title h3{
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 800;
     margin:0;
+}
+
+@media screen and (max-width:600px){
+    .claw-star .text .title h3{
+    font-size: 28px;
+}
 }
 
 .claw-star .text p, .claw-star .text ul{
