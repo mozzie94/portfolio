@@ -89,7 +89,7 @@ a:hover{
 }
 
 @media screen and (max-width: 785px) {
-    .about{
+    .about, .works{
         align-items: center;
     }
     
