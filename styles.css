@@ -5,6 +5,15 @@ body{
     font-family: "roboto", sans-serif;
 }
 
+.seperator{
+    height:8px;
+    width: 80vw;
+    max-width: 1280px;
+    background-color: #414141;
+    border-radius: 10px;
+    margin: 25px 0px;
+}
+
 html {
   scroll-behavior:smooth;
 }
@@ -13,12 +22,11 @@ html {
 a{
     text-decoration: none;
     color: white;
-    transition: color 150ms ease-in;
+    transition: color 150ms ease-out;
 }
 
 a:hover{
-    color: rgb(200, 200, 200);
-    transition: color 150ms ease-in;
+    color: rgb(150, 150, 150);
 }
 
 
@@ -26,6 +34,8 @@ a:hover{
     background-color: #113D4D;
     display: flex;
     justify-content: center;
+    position:fixed;
+    width: 100%;
 }
 
 .header .spacer{
@@ -34,7 +44,7 @@ a:hover{
     align-items: end;
     width: 90vw;
     max-width: 1344px;
-    margin: 50px 24px 34px;
+    margin: 40px 24px 24px;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -43,7 +53,22 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 173px;
 }
+
+#works{
+    scroll-margin-top: 183px;
+}
+
+@media screen and (max-width: 893px) {
+    .body{
+        padding-top: 241px;
+    }
+    #works{
+    scroll-margin-top: 251px;
+    }   
+}
+
 
 .spacer h1{
     margin:0;
@@ -60,14 +85,14 @@ a:hover{
 .tabs{
     display: flex;
     justify-content: space-between;
-    gap: 10px 56px;
+    gap: 10px 48px;
     text-wrap-mode: nowrap;
     flex-wrap: wrap;
 }
 
 @media screen and (max-width:600px){
     .spacer p{
-        font-size:24px;
+        font-size:20px;
     }
     .tabs{
         gap: 10px 24px;
@@ -77,15 +102,29 @@ a:hover{
     font-size: 45px;
     text-wrap-mode: nowrap;
     }
+    .body{
+        padding-top: 203px;
+    }
+    #works{
+    scroll-margin-top: 213px;
+    } 
 }
+
+/* @media screen and (max-width: 373px) {
+    .body{
+        padding-top: 241px;
+    }   
+    #works{
+    scroll-margin-top: 261px;
+    }
+} */
 
 .about{
     display: flex;
     flex-direction: column;
     width: 90vw;
     max-width: 1344px;
-    margin: 0px 24px;
-    margin-top: 34px;
+    margin: 10px 24px 0px;
 }
 
 @media screen and (max-width: 785px) {
@@ -166,15 +205,15 @@ a:hover{
     flex: 1 1 auto;
     width: 90vw;
     max-width: 1344px;
-    margin: 0px 48px;
-    margin-top: 20px;
+    margin: 0px 24px;
+    margin-top: 10px;
 }
 
 .works .content{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 }
+
 
 .claw-star{
     display: flex;
@@ -227,9 +266,8 @@ a:hover{
 }
 
 .claw-star .text .summary,
-.claw-star .text .specs,
-.claw-star .text .content{
-    margin-bottom: 25px;
+.claw-star .text .specs{
+    margin-bottom: 20px;
 }
 
 .claw-star .text .title h3{
@@ -249,4 +287,17 @@ a:hover{
     margin:0;
     font-weight: 300; /*slightly light*/
     list-style: disc;
+}
+
+footer{
+    padding:24px 40px;
+    margin-top:20px;
+    display: flex;
+    background-color: #113D4D;
+    justify-content: center;
+}
+
+footer div{
+        width: 1334px;
+        max-width: 90vw;
 }
