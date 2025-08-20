@@ -12,6 +12,7 @@ body{
     background-color: #414141;
     border-radius: 10px;
     margin: 25px 0px;
+    align-self: center;
 }
 
 html {
@@ -218,24 +219,26 @@ a:hover{
 }
 
 
-.claw-star .top{
+.claw-star .top,
+.crab-war .top{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px 20px;
-    margin-bottom: 20px;
     flex: 1 1 auto;
 }
 
 @media screen and (min-width: 786px){
-    .claw-star .top .media{
+    .claw-star .top .media,
+    .crab-war .top .media{
         display: flex;
         flex-direction: row;
         gap:10px;
         max-width: calc(inherit/2);
     }
 
-    .claw-star .top .media iframe{
+    .claw-star .top .media iframe,
+    .crab-war .top .media iframe{
         width: 44vw;
         max-width: 667px;
         aspect-ratio: 16/9;
@@ -243,7 +246,8 @@ a:hover{
 }
 
 @media screen and (max-width: 785px){
-    .claw-star .top .media{
+    .claw-star .top .media,
+    .crab-war .top .media{
         display: flex;
         flex-direction: column;
         gap:10px;
@@ -251,16 +255,19 @@ a:hover{
         flex: 1 1 auto;
     }
 
-    .claw-star .top .media iframe{
+    .claw-star .top .media iframe,
+    .crab-war .top .media iframe{
         max-width: inherit;
         aspect-ratio: 16/9;
     }
-    .claw-star .top{
+    .claw-star .top,
+    .crab-war .top{
         flex-wrap: wrap;
     }
 }
 
-.claw-star .text{
+.claw-star .text,
+.crab-war .text{
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -270,36 +277,46 @@ a:hover{
 
 
 
-.claw-star .top .summary .description{
+.claw-star .top .summary .description,
+.crab-war .top .summary .description{
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
-.claw-star .top .summary p{
+.claw-star .top .summary p,
+.crab-war .top .summary p{
     margin:0;
     font-size: 20px;
+    font-weight: 300;
 }
 
-.claw-star .top .summary .title h3{
+.claw-star .top .summary .title h3,
+.crab-war .top .summary .title h3{
     font-size: 36px;
     font-weight: 800;
     margin:0;
 }
 
 @media screen and (max-width:600px){
-        .claw-star .top .summary .title h3{
+        .claw-star .top .summary .title h3,
+        .crab-war .top .summary .title h3{
         font-size: 28px;
     }
 }
 
 @media screen and (max-width: 600px) /*mobile*/{
-    .claw-star .text{
+    .claw-star .text,
+    .crab-war .text{
         font-size: 16px;
     }
-    .claw-star .top .summary p{
+    .claw-star .top .summary p,
+    .crab-war .top .summary p{
         font-size: 16px;
+        font-weight: 300;
     }
 }
-.claw-star .text p, .claw-star .text ul{
+.claw-star .text p, .claw-star .text ul,
+.crab-war .text p, .crab-war .text ul{
     margin:0;
     font-weight: 300; /*slightly light*/
     list-style: disc;
