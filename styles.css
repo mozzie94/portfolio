@@ -26,6 +26,10 @@ a{
     transition: color 150ms ease-out;
 }
 
+.specs a{
+    text-decoration: underline;
+}
+
 a:hover{
     color: rgb(150, 150, 150);
 }
@@ -46,7 +50,7 @@ a:hover{
     width: 90vw;
     max-width: 1344px;
     margin: 40px 24px 24px;
-    gap: 30px;
+    gap: 10px 30px;
     flex-wrap: wrap;
 }
 
@@ -61,7 +65,7 @@ a:hover{
     scroll-margin-top: 183px;
 }
 
-@media screen and (max-width: 893px) {
+@media screen and (max-width: 875px) {
     .body{
         padding-top: 241px;
     }
@@ -220,7 +224,8 @@ a:hover{
 
 
 .claw-star .top,
-.crab-war .top{
+.crab-war .top,
+.light-a-way .top{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -230,7 +235,8 @@ a:hover{
 
 @media screen and (min-width: 786px){
     .claw-star .top .media,
-    .crab-war .top .media{
+    .crab-war .top .media,
+    .light-a-way .top .media{
         display: flex;
         flex-direction: row;
         gap:10px;
@@ -238,7 +244,8 @@ a:hover{
     }
 
     .claw-star .top .media iframe,
-    .crab-war .top .media iframe{
+    .crab-war .top .media iframe,
+    .light-a-way .top .media iframe{
         width: 44vw;
         max-width: 667px;
         aspect-ratio: 16/9;
@@ -247,7 +254,8 @@ a:hover{
 
 @media screen and (max-width: 785px){
     .claw-star .top .media,
-    .crab-war .top .media{
+    .crab-war .top .media,
+    .light-a-way .top .media{
         display: flex;
         flex-direction: column;
         gap:10px;
@@ -256,18 +264,21 @@ a:hover{
     }
 
     .claw-star .top .media iframe,
-    .crab-war .top .media iframe{
+    .crab-war .top .media iframe,
+    .light-a-way .top .media iframe{
         max-width: inherit;
         aspect-ratio: 16/9;
     }
     .claw-star .top,
-    .crab-war .top{
+    .crab-war .top,
+    .light-a-way .top{
         flex-wrap: wrap;
     }
 }
 
 .claw-star .text,
-.crab-war .text{
+.crab-war .text,
+.light-a-way .text{
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -278,45 +289,53 @@ a:hover{
 
 
 .claw-star .top .summary .description,
-.crab-war .top .summary .description{
+.crab-war .top .summary .description,
+.light-a-way .top .summary .description{
     margin-bottom: 20px;
     font-weight: 300;
 }
 
 .claw-star .top .summary p,
-.crab-war .top .summary p{
+.crab-war .top .summary p,
+.light-a-way .top .summary p{
     margin:0;
     font-size: 20px;
     font-weight: 300;
 }
 
 .claw-star .top .summary .title h3,
-.crab-war .top .summary .title h3{
+.crab-war .top .summary .title h3,
+.light-a-way .top .summary .title h3{
     font-size: 36px;
     font-weight: 800;
     margin:0;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width:600px){
         .claw-star .top .summary .title h3,
-        .crab-war .top .summary .title h3{
+        .crab-war .top .summary .title h3,
+        .light-a-way .top .summary .title h3{
         font-size: 28px;
     }
 }
 
 @media screen and (max-width: 600px) /*mobile*/{
     .claw-star .text,
-    .crab-war .text{
+    .crab-war .text,
+    .light-a-way .text{
         font-size: 16px;
     }
     .claw-star .top .summary p,
-    .crab-war .top .summary p{
+    .crab-war .top .summary p,
+    .light-a-way .top .summary p{
         font-size: 16px;
         font-weight: 300;
     }
 }
 .claw-star .text p, .claw-star .text ul,
-.crab-war .text p, .crab-war .text ul{
+.crab-war .text p, .crab-war .text ul,
+.light-a-way .text p, .light-a-way .text ul{
     margin:0;
     font-weight: 300; /*slightly light*/
     list-style: disc;
