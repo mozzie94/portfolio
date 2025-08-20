@@ -56,7 +56,7 @@ a:hover{
     padding-top: 173px;
 }
 
-#works{
+#works, #about{
     scroll-margin-top: 183px;
 }
 
@@ -64,7 +64,7 @@ a:hover{
     .body{
         padding-top: 241px;
     }
-    #works{
+    #works, #about{
     scroll-margin-top: 251px;
     }   
 }
@@ -137,6 +137,8 @@ a:hover{
 .title h2{
     font-size: 48px;
     margin:0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -187,7 +189,8 @@ a:hover{
     }
     .title h2{
     font-size: 38px;
-    margin:0;  
+    margin:0;
+    margin-bottom: 20px;  
     }
     
 }
@@ -215,29 +218,32 @@ a:hover{
 }
 
 
-.claw-star{
+.claw-star .top{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     gap: 10px 20px;
+    margin-bottom: 20px;
+    flex: 1 1 auto;
 }
 
 @media screen and (min-width: 786px){
-    .claw-star .media{
+    .claw-star .top .media{
         display: flex;
         flex-direction: row;
         gap:10px;
         max-width: calc(inherit/2);
     }
 
-    .claw-star .media img, .claw-star .media iframe{
+    .claw-star .top .media iframe{
         width: 44vw;
         max-width: 667px;
+        aspect-ratio: 16/9;
     }
 }
 
 @media screen and (max-width: 785px){
-    .claw-star .media{
+    .claw-star .top .media{
         display: flex;
         flex-direction: column;
         gap:10px;
@@ -245,9 +251,12 @@ a:hover{
         flex: 1 1 auto;
     }
 
-    .claw-star .media img, .claw-star .media iframe{
+    .claw-star .top .media iframe{
         max-width: inherit;
         aspect-ratio: 16/9;
+    }
+    .claw-star .top{
+        flex-wrap: wrap;
     }
 }
 
@@ -259,30 +268,37 @@ a:hover{
     flex: 1 1 277px;
 }
 
+
+
+.claw-star .top .summary .description{
+    margin-bottom: 20px;
+}
+
+.claw-star .top .summary p{
+    margin:0;
+    font-size: 20px;
+}
+
+.claw-star .top .summary .title h3{
+    font-size: 36px;
+    font-weight: 800;
+    margin:0;
+}
+
+@media screen and (max-width:600px){
+        .claw-star .top .summary .title h3{
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width: 600px) /*mobile*/{
     .claw-star .text{
         font-size: 16px;
     }
+    .claw-star .top .summary p{
+        font-size: 16px;
+    }
 }
-
-.claw-star .text .summary,
-.claw-star .text .specs{
-    margin-bottom: 20px;
-}
-
-.claw-star .text .title h3{
-    font-size: 36px;
-    font-weight: 800;
-    margin:0;
-    margin-top: 10px;
-}
-
-@media screen and (max-width:600px){
-    .claw-star .text .title h3{
-    font-size: 28px;
-}
-}
-
 .claw-star .text p, .claw-star .text ul{
     margin:0;
     font-weight: 300; /*slightly light*/
