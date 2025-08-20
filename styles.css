@@ -26,6 +26,10 @@ a{
     transition: color 150ms ease-out;
 }
 
+.role{
+    margin-bottom: 20px;
+}
+
 .specs a{
     text-decoration: underline;
 }
@@ -291,7 +295,6 @@ a:hover{
 .claw-star .top .summary .description,
 .crab-war .top .summary .description,
 .light-a-way .top .summary .description{
-    margin-bottom: 20px;
     font-weight: 300;
 }
 
