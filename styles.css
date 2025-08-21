@@ -19,7 +19,6 @@ html {
   scroll-behavior:smooth;
 }
 
-
 a{
     text-decoration: none;
     color: white;
@@ -62,22 +61,14 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: baseline;
     padding-top: 173px;
+    min-height: 75vh;
 }
 
 #works, #about{
     scroll-margin-top: 193px;
 }
-
-@media screen and (max-width: 875px) {
-    .body{
-        padding-top: 221px;
-    }
-    #works, #about{
-    scroll-margin-top: 251px;
-    }   
-}
-
 
 .spacer h1{
     margin:0;
@@ -99,26 +90,6 @@ a:hover{
     flex-wrap: wrap;
 }
 
-@media screen and (max-width:600px){
-    .spacer p{
-        font-size:20px;
-    }
-    .tabs{
-        gap: 10px 24px;
-    }
-    .spacer h1{
-    margin:0;
-    font-size: 45px;
-    text-wrap-mode: nowrap;
-    }
-    .body{
-        padding-top: 175px;
-    }
-    #works{
-    scroll-margin-top: 213px;
-    } 
-}
-
 /* @media screen and (max-width: 373px) {
     .body{
         padding-top: 241px;
@@ -136,21 +107,12 @@ a:hover{
     margin: 20px 24px 0px;
 }
 
-@media screen and (max-width: 785px) {
-    .about, .works{
-        align-items: center;
-    }
-    
-}
-
 .title h2{
     font-size: 48px;
     margin:0;
     text-align: center;
     margin-bottom: 20px;
 }
-
-
 
 .about .content{
     display: flex;
@@ -159,62 +121,21 @@ a:hover{
     flex: 1 1 auto;
 }
 
-@media screen and (max-width: 785px) {
-    .about .content{
-        justify-content: center;
-    }
-}
-
-
 .about .content img{
     width: 400px;
     max-width: 90vw;
 }
 
-@media screen and (min-width: 786px) /*PCs*/{   
-    .about .content .text{
-        margin:0;
-        font-size: 20px;
-        max-width: 914px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1 1 277px;
-    }
-}
-
-@media screen and (max-width: 785px) /*tablets*/{   
-    .about .content .text{
-        margin:0;
-        font-size: 20px;
-    }
-    .about .content img{
-    max-width: 50vw;
-}
-}
-@media screen and (max-width: 600px) /*mobile*/{   
-    .about .content .text{
-        font-size: 16px;
-    }
-    .title h2{
-    font-size: 38px;
-    margin:0;
-    margin-bottom: 20px;  
-    }
-    
-}
 
 .about .content .text p{
     margin-top :0;
     font-weight: 300; /*slightly light*/
 }
 
-
-
 .works{
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     width: 90vw;
     max-width: 1344px;
     margin: 20px 24px 0px;
@@ -224,7 +145,6 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
-
 
 .claw-star .top,
 .crab-war .top,
@@ -237,52 +157,7 @@ a:hover{
 }
 
 @media screen and (min-width: 786px){
-    .claw-star .top .media,
-    .crab-war .top .media,
-    .light-a-way .top .media{
-        display: flex;
-        flex-direction: row;
-        gap:10px;
-        max-width: calc(inherit/2);
-    }
-
-    .claw-star .top .media iframe,
-    .crab-war .top .media iframe,
-    .light-a-way .top .media iframe{
-        width: 44vw;
-        max-width: 667px;
-        aspect-ratio: 16/9;
-    }
-}
-
-@media screen and (max-width: 785px){
-    .claw-star .top .media,
-    .crab-war .top .media,
-    .light-a-way .top .media{
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-        max-width: 90vw;
-        flex: 1 1 auto;
-    }
-
-    .claw-star .top .media iframe,
-    .crab-war .top .media iframe,
-    .light-a-way .top .media iframe{
-        max-width: inherit;
-        aspect-ratio: 16/9;
-    }
-    .claw-star .top,
-    .crab-war .top,
-    .light-a-way .top{
-        flex-wrap: wrap;
-    }
-    .recent-works{
-        flex-wrap: wrap;
-    }
-    .recent-works img{
-        min-width: 90vw;
-    }
+    
 }
 
 .claw-star .text,
@@ -322,7 +197,7 @@ a:hover{
 .recent-works .crab-war,
 .recent-works .claw-star,
 .recent-works .light-a-way{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .claw-star .top .summary .description,
@@ -348,36 +223,6 @@ a:hover{
     margin-bottom: 5px;
 }
 
-@media screen and (max-width:600px){
-        .claw-star .top .summary .title h3,
-        .crab-war .top .summary .title h3,
-        .light-a-way .top .summary .title h3{
-        font-size: 28px;
-    }
-    .recent-works h3{
-    font-size: 24px;
-    margin: 10px 0px;
-}
-
-.recent-works p{
-    font-size: 16px;
-    margin:0;
-}
-}
-
-@media screen and (max-width: 600px) /*mobile*/{
-    .claw-star .text,
-    .crab-war .text,
-    .light-a-way .text{
-        font-size: 16px;
-    }
-    .claw-star .top .summary p,
-    .crab-war .top .summary p,
-    .light-a-way .top .summary p{
-        font-size: 16px;
-        font-weight: 300;
-    }
-}
 .claw-star .text p, .claw-star .text ul,
 .crab-war .text p, .crab-war .text ul,
 .light-a-way .text p, .light-a-way .text ul{
@@ -392,6 +237,7 @@ footer{
     display: flex;
     background-color: #113D4D;
     justify-content: center;
+    flex: 1 1 auto;
 }
 
 footer div{
@@ -402,4 +248,176 @@ footer div{
 .empty-space{
     height: 100px;
     background-color: transparent;
+}
+
+.button-works button{
+    background: #313131;
+    font-size: 24px;
+    border-radius: 20px;
+    border-color: #113D4D;
+    border-style: solid;
+    border-width: 4px;
+    padding: 10px 40px;
+    text-wrap: none;
+    max-width: 50vw;
+    transition: 150ms linear;
+    color: white;
+}
+
+.button-works button:hover{
+    background-color: #113D4D;
+}
+
+.button-works button:hover{
+    color: white;
+}
+
+@media screen and (max-width: 875px) {
+    .body{
+        padding-top: 221px;
+    }
+    #works, #about{
+    scroll-margin-top: 251px;
+    }
+    .about .content .text{
+        margin:0;
+        font-size: 20px;
+    }
+    .about .content img{
+    max-width: 50vw;
+    }   
+}
+
+/*---------------------PCs, Min 786px settings--------------------*/
+
+@media screen and (min-width: 786px) /*PCs*/{   
+    .about .content .text{
+        margin:0;
+        font-size: 20px;
+        max-width: 914px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 277px;
+    }
+    .claw-star .top .media,
+    .crab-war .top .media,
+    .light-a-way .top .media{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        max-width: calc(inherit/2);
+    }
+
+    .claw-star .top .media iframe,
+    .crab-war .top .media iframe,
+    .light-a-way .top .media iframe{
+        width: 44vw;
+        max-width: 667px;
+        aspect-ratio: 16/9;
+    }
+}
+
+/*---------------------Tablet, max 785px settings--------------------*/
+
+@media screen and (max-width: 785px) {
+    .about, .works{
+        align-items: center;
+    }
+    .about .content{
+        justify-content: center;
+    }
+    .about .content .text{
+        margin:0;
+        font-size: 20px;
+    }
+    .about .content img{
+    max-width: 50vw;
+    }
+    .claw-star .top .media,
+    .crab-war .top .media,
+    .light-a-way .top .media{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        max-width: 90vw;
+        flex: 1 1 auto;
+    }
+
+    .claw-star .top .media iframe,
+    .crab-war .top .media iframe,
+    .light-a-way .top .media iframe{
+        max-width: inherit;
+        aspect-ratio: 16/9;
+    }
+    .claw-star .top,
+    .crab-war .top,
+    .light-a-way .top{
+        flex-wrap: wrap;
+    }
+    .recent-works{
+        flex-wrap: wrap;
+    }
+    .recent-works img{
+        min-width: 90vw;
+    }
+    
+}
+
+/*---------------------Mobile, 600px settings--------------------*/
+
+@media screen and (max-width: 600px) /*mobile*/{
+    .spacer p{
+        font-size:20px;
+    }
+    .tabs{
+        gap: 10px 24px;
+    }
+    .spacer h1{
+    margin:0;
+    font-size: 45px;
+    text-wrap-mode: nowrap;
+    }
+    .body{
+        padding-top: 175px;
+    }
+    #works{
+    scroll-margin-top: 213px;
+    } 
+    .about .content .text{
+        font-size: 16px;
+    }
+    .title h2{
+    font-size: 38px;
+    margin:0;
+    margin-bottom: 20px;  
+    }
+    .claw-star .text,
+    .crab-war .text,
+    .light-a-way .text{
+        font-size: 16px;
+    }
+    .claw-star .top .summary p,
+    .crab-war .top .summary p,
+    .light-a-way .top .summary p{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .claw-star .top .summary .title h3,
+        .crab-war .top .summary .title h3,
+        .light-a-way .top .summary .title h3{
+        font-size: 28px;
+    }
+    .recent-works h3{
+    font-size: 24px;
+    margin: 10px 0px;
+    }
+    .recent-works p{
+        font-size: 16px;
+        margin:0;
+    }
+    .button-works button{
+        max-width: 90vw;
+        font-size: 20px;
+    }
 }
