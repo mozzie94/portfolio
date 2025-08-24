@@ -205,6 +205,34 @@ a:hover{
     margin-bottom: 40px;
 }
 
+.image-overlay{
+    position: relative;
+}
+
+.image-overlay img{
+    transition: 0.25s ease;
+}
+
+.overlay-link{
+  transition: .25s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  user-select: none;
+}
+
+.image-overlay:hover img{
+    opacity: 0.35;
+}
+.image-overlay:hover .overlay-link, p{
+    opacity: 1;
+    color: white;
+}
+
 .claw-star .top .summary .description,
 .crab-war .top .summary .description,
 .light-a-way .top .summary .description{
