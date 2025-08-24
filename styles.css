@@ -44,6 +44,7 @@ a:hover{
     justify-content: center;
     position:fixed;
     width: 100%;
+    box-shadow: 0px 1px 50px #313131;
 }
 
 .header .spacer{
