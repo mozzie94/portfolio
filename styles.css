@@ -44,7 +44,7 @@ a:hover{
     justify-content: center;
     position:fixed;
     width: 100%;
-    box-shadow: 0px 1px 50px #313131;
+    box-shadow: 0px 2px 6px #2c2c2c;
 }
 
 .header .spacer{
@@ -82,10 +82,14 @@ a:hover{
     font-size: 32px;
     font-weight: 200; /*light*/
 }
+.spacer img{
+    height: 28px;
+}
 
 .tabs{
     display: flex;
     justify-content: space-between;
+    align-items:center;
     gap: 10px 48px;
     text-wrap-mode: nowrap;
     flex-wrap: wrap;
@@ -370,6 +374,9 @@ footer div{
 @media screen and (max-width: 600px) /*mobile*/{
     .spacer p{
         font-size:20px;
+    }
+    .spacer img{
+        height: 20px;
     }
     .tabs{
         gap: 10px 24px;
