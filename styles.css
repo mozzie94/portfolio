@@ -25,10 +25,6 @@ a{
     transition: 150ms linear;
 }
 
-.role{
-    margin-bottom: 20px;
-}
-
 .specs a{
     text-decoration: underline;
 }
@@ -116,7 +112,14 @@ a:hover{
     font-size: 48px;
     margin:0;
     text-align: center;
+}
+
+.title h3{
+    font-size: 24px;
+    margin:0;
+    text-align: center;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .about .content{
@@ -159,6 +162,7 @@ a:hover{
     align-items: center;
     gap: 10px 20px;
     flex: 1 1 auto;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 786px){
@@ -192,6 +196,7 @@ a:hover{
 .recent-works h3{
     font-size: 28px;
     margin: 10px 0px;
+    
 }
 
 .recent-works p{
@@ -252,21 +257,21 @@ a:hover{
     font-weight: 300;
 }
 
-.claw-star .top .summary .title h3,
-.crab-war .top .summary .title h3,
-.light-a-way .top .summary .title h3{
-    font-size: 36px;
-    font-weight: 800;
-    margin:0;
-    margin-bottom: 5px;
-}
-
-.claw-star .top .summary .specs{
+.claw-star .top .summary .specs, .claw-star .top .summary .roles{
     margin-bottom: 20px;
 }
 
-.claw-star .top .summary .download img{
-    height: 60px;
+.claw-star .download{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.claw-star .download img{
+    height: 8vw;
+    min-height: 60px;
+    max-height: 100px;
 }
 
 .claw-star .text p, .claw-star .text ul,
@@ -331,12 +336,6 @@ footer div{
     .about .content img{
     max-width: 50vw;
     }   
-}
-
-@media screen and (max-width: 882px) {
-    .claw-star .top .summary .download img{
-    height: 50px;
-    }
 }
 
 /*---------------------PCs, Min 786px settings--------------------*/
@@ -412,7 +411,14 @@ footer div{
     .recent-works img{
         min-width: 90vw;
     }
-    
+    .claw-star .download img{
+    height: 20vw;
+    min-height: 30px;
+    max-height: 80px;
+    }
+    .claw-star .download{
+        padding: 20px 0px;
+    }
 }
 
 /*---------------------Mobile, 600px settings--------------------*/
@@ -444,12 +450,20 @@ footer div{
     .title h2{
     font-size: 38px;
     margin:0;
-    margin-bottom: 20px;  
+    }
+    .title h3{
+    font-size: 18px;
+    margin:0;
+    margin-bottom: 20px;
     }
     .claw-star .text,
     .crab-war .text,
     .light-a-way .text{
         font-size: 16px;
+        max-width: 90vw;
+    }
+    .claw-star .top .summary{
+        max-width: 90vw;
     }
     .claw-star .top .summary p,
     .crab-war .top .summary p,
@@ -474,7 +488,13 @@ footer div{
         max-width: 90vw;
         font-size: 20px;
     }
-    .claw-star .top .summary .download img{
-    height: 40px;
+    .claw-star .download{
+        gap: 10px;
+        padding: 20px 0px;
+        max-width: 90vw;
+    }
+    .claw-star .download img{
+    height: 14vw;
+    max-height: 60px;
     }
 }
