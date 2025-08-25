@@ -241,6 +241,7 @@ a:hover{
 .crab-war .top .summary .description,
 .light-a-way .top .summary .description{
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .claw-star .top .summary p,
@@ -258,6 +259,14 @@ a:hover{
     font-weight: 800;
     margin:0;
     margin-bottom: 5px;
+}
+
+.claw-star .top .summary .specs{
+    margin-bottom: 20px;
+}
+
+.claw-star .top .summary .download img{
+    height: 60px;
 }
 
 .claw-star .text p, .claw-star .text ul,
@@ -308,7 +317,7 @@ footer div{
 }
 
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 884px) {
     .body{
         padding-top: 221px;
     }
@@ -322,6 +331,12 @@ footer div{
     .about .content img{
     max-width: 50vw;
     }   
+}
+
+@media screen and (max-width: 882px) {
+    .claw-star .top .summary .download img{
+    height: 50px;
+    }
 }
 
 /*---------------------PCs, Min 786px settings--------------------*/
@@ -458,5 +473,8 @@ footer div{
     .button-works button{
         max-width: 90vw;
         font-size: 20px;
+    }
+    .claw-star .top .summary .download img{
+    height: 40px;
     }
 }
