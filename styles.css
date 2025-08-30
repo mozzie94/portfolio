@@ -112,12 +112,14 @@ a:hover{
     font-size: 48px;
     margin:0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .title h3{
     font-size: 24px;
     margin:0;
     text-align: center;
+    margin-top: -20px;
     margin-bottom: 20px;
     font-weight: 300;
 }
@@ -327,19 +329,39 @@ footer div{
     gap: 20px;
     flex-wrap: wrap;
     flex: 1 1 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .summary-claw-stars,
 .summary-crab-war,
 .summary-light-a-way{
+    display: flex;
+    flex-direction: column;
     width: 25vw;
-    max-width: 360px;
+    max-width: 350px;
     text-align: center;
     background-color:#414141;
     padding: 20px;
     border-radius: 20px;
     flex: 1 1 auto;
+    min-height: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-claw-stars h3,
+.summary-crab-war h3,
+.summary-light-a-way h3{
+    font-size: 24px;
+    margin: 16px 0px;
+}
+
+.summary-claw-stars p,
+.summary-crab-war p,
+.summary-light-a-way p{
+    font-size: 16px;
+    font-weight: 300;
+    margin:10px 0px;
 }
 
 .summary-claw-stars a,
@@ -350,12 +372,15 @@ footer div{
     border-radius: 20px;
 }
 
+.detail-button{
+    margin: 30px 0px 10px;
+}
+
 .summary-claw-stars img,
 .summary-crab-war img,
 .summary-light-a-way img{
     border-radius: 100%;
-    width: 25vw;    border-radius: 50px;
-
+    width: 25vw;    
     max-width: 250px;
 }
 
