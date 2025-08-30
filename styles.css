@@ -292,7 +292,7 @@ footer{
 }
 
 footer div{
-        width: 1334px;
+        width: 1344px;
         max-width: 90vw;
 }
 
@@ -321,6 +321,43 @@ footer div{
     opacity: 100%;
 }
 
+.works .content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.summary-claw-stars,
+.summary-crab-war,
+.summary-light-a-way{
+    width: 25vw;
+    max-width: 360px;
+    text-align: center;
+    background-color:#414141;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1 1 auto;
+}
+
+.summary-claw-stars a,
+.summary-crab-war a,
+.summary-light-a-way a{
+    background-color: #055775;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.summary-claw-stars img,
+.summary-crab-war img,
+.summary-light-a-way img{
+    border-radius: 100%;
+    width: 25vw;    border-radius: 50px;
+
+    max-width: 250px;
+}
 
 @media screen and (max-width: 884px) {
     .body{
