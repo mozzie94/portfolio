@@ -29,8 +29,8 @@ a{
     text-decoration: underline;
 }
 
-a:hover{
-    opacity: 75%;
+.header a:hover{
+    opacity: .65;
 }
 
 
