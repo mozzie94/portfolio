@@ -41,6 +41,7 @@ a{
     position:fixed;
     width: 100%;
     box-shadow: 0px 2px 6px #2c2c2c;
+    z-index: 1;
 }
 
 .header .spacer{
@@ -151,10 +152,6 @@ a{
     margin: 20px 24px 0px;
 }
 
-.works .content{
-    display: flex;
-    flex-direction: column;
-}
 
 .claw-star .top,
 .crab-war .top,
@@ -165,10 +162,6 @@ a{
     gap: 10px 20px;
     flex: 1 1 auto;
     margin-bottom: 20px;
-}
-
-@media screen and (min-width: 786px){
-    
 }
 
 .claw-star .text,
@@ -215,6 +208,7 @@ a{
 
 .image-overlay{
     position: relative;
+    z-index: 0;
 }
 
 .image-overlay img{
@@ -334,7 +328,9 @@ footer div{
 
 .summary-claw-stars,
 .summary-crab-war,
-.summary-light-a-way{
+.summary-light-a-way,
+.summary-zap-zap-math,
+.summary-mob-fish-hunter{
     display: flex;
     flex-direction: column;
     width: 25vw;
@@ -351,25 +347,36 @@ footer div{
 
 .summary-claw-stars h3,
 .summary-crab-war h3,
-.summary-light-a-way h3{
+.summary-light-a-way h3,
+.summary-zap-zap-math h3,
+.summary-mob-fish-hunter h3{
     font-size: 24px;
     margin: 16px 0px;
 }
 
 .summary-claw-stars p,
 .summary-crab-war p,
-.summary-light-a-way p{
+.summary-light-a-way p,
+.summary-zap-zap-math p,
+.summary-mob-fish-hunter p{
     font-size: 16px;
     font-weight: 300;
-    margin:10px 0px;
+    margin:0px 0px;
 }
 
 .summary-claw-stars a,
 .summary-crab-war a,
-.summary-light-a-way a{
+.summary-light-a-way a,
+.summary-zap-zap-math a,
+.summary-mob-fish-hunter a{
     background-color: #055775;
     padding: 10px 20px;
     border-radius: 20px;
+}
+
+.bottom .roles-text{
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .detail-button{
@@ -378,7 +385,9 @@ footer div{
 
 .summary-claw-stars img,
 .summary-crab-war img,
-.summary-light-a-way img{
+.summary-light-a-way img,
+.summary-zap-zap-math img,
+.summary-mob-fish-hunter img{
     border-radius: 100%;
     width: 25vw;    
     max-width: 250px;
@@ -512,11 +521,12 @@ footer div{
     .title h2{
     font-size: 38px;
     margin:0;
+    margin-bottom: 20px;
     }
     .title h3{
     font-size: 18px;
     margin:0;
-    margin-bottom: 20px;
+    margin-top: -20px;
     }
     .claw-star .text,
     .crab-war .text,
@@ -558,5 +568,18 @@ footer div{
     .claw-star .download img{
     height: 14vw;
     max-height: 60px;
+    }
+    .works .content{
+        max-width: 90vw;
+        flex-direction: column;
+    }
+    .summary-crab-war,
+    .summary-claw-stars,
+    .summary-light-a-way,
+    .summary-zap-zap-math,
+    .summary-mob-fish-hunter{
+        max-width: 90vw;
+        width: 80vw;
+        min-height: 500px;
     }
 }
