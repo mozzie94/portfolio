@@ -171,9 +171,31 @@ a{
     font-size: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex: 1 1 277px;
     margin-top: 20px;
+}
+
+.claw-star .text .description,
+.crab-war .text .description,
+.light-a-way .text .description{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: -10px;
+    justify-content: space-between;
+}
+
+.description .roles{
+    flex: 0 1 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description .roles h3{
+    margin: 10px 0px;
 }
 
 .recent-works{
@@ -491,6 +513,18 @@ footer div{
     }
     .claw-star .download{
         padding: 20px 0px;
+    }
+    .claw-star .text .description{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .description .roles{
+        flex: 1 1 auto;
+        align-items: flex-start;
+    }
+    .description .roles h3{
+        width: 90vw;
+        text-align: center;
     }
 }
 
