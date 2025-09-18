@@ -24,9 +24,6 @@ a{
     transition: 150ms linear;
 }
 
-.specs a{
-    text-decoration: underline;
-}
 
 .header a:hover{
     opacity: .65;
@@ -108,6 +105,7 @@ a{
     margin: 20px 24px 0px;
 }
 
+
 .title h2{
     font-size: 48px;
     margin:0;
@@ -120,7 +118,6 @@ a{
     margin:0;
     text-align: center;
     margin-top: -20px;
-    margin-bottom: 20px;
     font-weight: 300;
 }
 
@@ -176,25 +173,25 @@ a{
     margin-top: 20px;
 }
 
-.claw-star .text .description,
-.crab-war .text .description,
-.light-a-way .text .description{
+.claw-star .text .role_description,
+.crab-war .text .role_description,
+.light-a-way .text .role_description{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-top: -10px;
+    margin-top: 20px;
     justify-content: space-between;
     flex-grow: 1;
 }
 
-.description .roles{
+.role_description .roles{
     flex: 0 1 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.description .roles h3{
+.role_description .roles h3{
     margin: 10px 0px;
 }
 
@@ -269,11 +266,18 @@ a{
     align-items: center;
 }
 
+.claw-star .top .summary,
+.crab-war .top .summary,
+.light-a-way .top .summary{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .claw-star .top .summary .description,
 .crab-war .top .summary .description,
 .light-a-way .top .summary .description{
     font-weight: 300;
-    margin-bottom: 20px;
 }
 
 .claw-star .top .summary p,
@@ -282,10 +286,6 @@ a{
     margin:0;
     font-size: 20px;
     font-weight: 300;
-}
-
-.claw-star .top .summary .specs, .claw-star .top .summary .roles{
-    margin-bottom: 20px;
 }
 
 .claw-star .download{
@@ -307,6 +307,10 @@ a{
     margin:0;
     font-weight: 300; /*slightly light*/
     list-style: disc;
+}
+
+.role_description .roles li{
+    padding-bottom: 10px;
 }
 
 footer{
@@ -356,6 +360,7 @@ footer div{
     flex-wrap: wrap;
     flex: 1 1 auto;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 .summary-claw-stars,
@@ -522,15 +527,15 @@ footer div{
     .claw-star .download{
         padding: 20px 0px;
     }
-    .claw-star .text .description{
+    .claw-star .text .role_description{
         flex-direction: column;
         width: 90vw;
     }
-    .description .roles{
+    .role_description .roles{
         flex: 1 1 auto;
         align-items: flex-start;
     }
-    .description .roles h3{
+    .role_description .roles h3{
         width: 90vw;
         text-align: center;
     }
@@ -571,6 +576,7 @@ footer div{
     font-size: 18px;
     margin:0;
     margin-top: -20px;
+    margin-bottom: 20px;
     }
     .claw-star .text,
     .crab-war .text,
