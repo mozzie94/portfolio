@@ -378,6 +378,7 @@ footer div{
     min-height: 600px;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .summary-claw-stars h3,
