@@ -158,7 +158,6 @@ a{
     align-items: center;
     gap: 10px 20px;
     flex: 1 1 auto;
-    margin-bottom: 20px;
 }
 
 .claw-star .text,
@@ -170,7 +169,6 @@ a{
     align-items: center;
     justify-content: center;
     flex: 1 1 277px;
-    margin-top: 20px;
 }
 
 .claw-star .text .role_description,
@@ -292,7 +290,7 @@ a{
     display: flex;
     gap: 40px;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 40px 0px 20px;
 }
 
 .claw-star .download img{
