@@ -183,7 +183,7 @@ a{
 }
 
 .role_description .roles{
-    flex: 0 1 500px;
+    flex: 0 1 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
